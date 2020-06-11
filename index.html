@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>CostControl</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <!-- Форма ввода данных о новой транзакции -->
+    <input id='in_sum'>
+    <select name='category' id='category'>
+        <option value='1' selected>Еда</option>
+        <option value='2'>Транспорт</option>
+        <option value='3'>Покупки</option>
+    </select>
+    <select name='subcategory' id='subcategory'>
+    </select>
+    <input id='in_comment'>
+    <button onclick='new_transaction()'>Добавить</button>
+
+    <!-- Кнопка очистки локального хранилища -->
+    <button onclick='empty()'>Очистить</button>
+
+    <!-- Кнопка удаления записи -->    
+    <button onclick='remove()'>Удалить</button>
+    
+
+    <div class='cards'>
+    <!-- Список транзакций -->
+    <div class='transaction_list' id='trans_list'>
+
+    </div>
+    
+    <!-- Статистика -->
+    <div class='statistics_list' id='stat_list'>
+
+    </div>
+
+    </div>
+
+    <!--  -->
+    
+
+    <!--  -->
+    <script src='script.js'></script>
+</body>
+</html>
