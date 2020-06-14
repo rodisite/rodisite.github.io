@@ -1,0 +1,193 @@
+/* Main */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: Roboto;
+    font-size: 18px;
+    
+    margin: 0;
+    padding: 20px 0 0 0;
+
+    background-color: #fafafa;
+}
+
+div, input, select {
+    box-sizing: border-box;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.cards > div {
+    background-color: #fff;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+
+    border-radius: 16px;
+    box-shadow: 0 0 4px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mybutton {
+    font-size: 0.8em;
+    align-self: center;
+}
+.mybutton:hover {
+    color: #666;
+    cursor: pointer;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+
+    overflow: auto;
+}
+.list::-webkit-scrollbar { width: 0; }
+
+.list_card {
+    display: flex;
+
+    box-shadow: 0 0 4px;
+    border-radius: 16px;
+
+    padding: 8px;
+    margin: 4px 8px;
+}
+
+.card_sum {
+    width: 120px;
+    align-self: center;
+
+    text-align: right;
+}
+
+/* MyForm */
+.myform {
+    padding: 8px;
+}
+
+.myform_header {
+    padding: 8px 0;
+}
+
+.myform_button {
+    padding: 8px 0;
+}
+
+.in_myform {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    padding: 8px;
+
+    border-radius: 16px;
+    box-shadow: 0 0 4px;
+}
+
+.in_sum_head, input, .in_category_head, select, .in_comment_head, .in_date_head {
+    font-family: Roboto;
+    font-size: 0.9em;
+}
+
+input, select {
+    width: 230px;
+    margin: 2px 0 0 0;
+
+    border: 1px solid #666;
+    border-radius: 8px;
+}
+input:focus, select:focus {
+    outline: none;
+}
+
+#in_sum, #category, #subcategory, #in_date, #in_comment {
+    width: 240px;
+    height: 24px;
+}
+
+#in_sum, #in_comment {
+    padding: 1px 4px;
+}
+
+.in_category {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Transaction */
+.trans_head {
+    padding: 16px 8px 4px 8px;
+}
+
+.transaction_comment {
+    font-size: 0.8em;
+}
+
+.transaction_name {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.transaction_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.transaction_sum {
+    color: #ff0000;
+}
+
+.transaction_date {
+    font-size: 0.8em;
+
+    text-align: right;
+}
+
+.transaction_remove {
+    font-size: 0.6em;
+
+    align-self: center;
+
+    padding: 12px 4px 12px 12px;
+}
+.transaction_remove:hover {
+    color: #ff0000;
+    cursor: pointer;
+}
+
+/* Statistics */
+.stat_head {
+    padding: 16px 8px 4px 8px;
+}
+
+.statistics_subcoteg {
+    flex-grow: 1;
+}
+
+/* Media */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 0;
+    }
+}
