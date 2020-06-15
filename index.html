@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CostControl</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <!-- Контейнер -->
+    <div class='container'>
+
+    <!-- Карточки новой операции, списка последних транзакций и т.д. -->
+    <div class='cards'>
+
+    <!-- Форма ввода данных о новой транзакции -->
+    <div class='myform card'>
+        <div class='head'>
+            <div class='myform_header'>Новая операция</div>
+            <div class='myform_button mybutton' onclick='check_sum()'>Добавить</div>
+        </div>
+        <div class='in_myform'>
+            <div class='sum'>
+                <div class='in_sum_head'>Сумма:</div>
+                <input id='in_sum'>
+            </div>
+            <div class='select'>
+                <div class='in_category_head'>Категория:</div>
+                <div class='in_category'>
+                    <select name='category' id='category'>
+                        <option value='1' selected>Еда и напитки</option>
+                        <option value='2'>Транспорт</option>
+                        <option value='3'>Жилье</option>
+                        <option value='4'>Покупки</option>
+                        <option value='5'>Досуг</option>
+                        <option value='6'>Связь</option>
+                    </select>
+                    <select name='subcategory' id='subcategory'>
+                    </select>
+                </div>
+            </div>
+            <div class='date'>
+                <div class='in_date_head'>
+                    Дата:
+                </div>
+                <div class='in_date'>
+                    <input type='date' id='in_date'>
+                </div>
+            </div> 
+            <div class='comment'>
+                <div class='in_comment_head'>Комментарий:</div>
+                <input id='in_comment'>
+            </div>  
+        </div>
+    </div>
+
+    <!-- Список транзакций -->
+    <div class='trans card'>
+        <div class='trans_head head'>
+            <div class='trans_header'>Последние траты</div>
+            <div class='mybutton' onclick='check_trans()'>Очистить</div>
+        </div>
+
+        <div class='list' id='trans_list'>
+
+        </div>
+    </div>
+    
+    <!-- Статистика -->
+    <div class="stat card">
+        <div class='stat_head head'>
+            <div class='stat_header'>Статистика расходов</div>
+            <div class='mybutton' onclick='check_sort()'>Сортировать</div>
+        </div>
+            <div class='list' id='stat_list'>
+
+        </div>
+    </div>
+
+    </div>
+
+    </div>
+
+    <!--  -->
+    
+
+    <!--  -->
+    <script src='script.js'></script>
+</body>
+</html>
